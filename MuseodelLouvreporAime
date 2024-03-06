@@ -1,0 +1,191 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>Museo Louvre</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/Louvre logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Historia</a>
+          <a href="#secc2">Explora</a>
+          <a href="#secc3">Recorrido 360°</a>
+          <a href="#secc4">Visita</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Historia</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El Louvre, el emblemático museo nacional de Francia situado en París, se dedica a una amplia gama de disciplinas que incluyen las bellas artes, la arqueología y las artes decorativas previas al impresionismo, todo ello alojado en el histórico Palacio del Louvre. Con una superficie de 210,000 metros cuadrados, el museo alberga alrededor de 487,000 objetos, destacando 7,000 obras de pintura y aproximadamente 380,000 piezas entre objetos y antigüedades. Originario de las colecciones reales francesas y enriquecido con piezas adquiridas durante el periodo Napoleónico, el Louvre se inauguró en 1793 como un innovador concepto de museo accesible al público amplio, más allá de la aristocracia y la elite. 
+</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Su vasta colección se encuentra meticulosamente organizada en secciones temáticas que abarcan desde antigüedades de Oriente Medio, Egipto, Grecia, Roma y la Etruria, hasta la historia del propio Louvre y su periodo medieval, pasando por secciones dedicadas a la pintura, la escultura, los objetos artísticos, las artes gráficas y el arte islámico.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/1.jpg" title="Img 1a">
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<p><em><center><span style="color: #81571e;">El corazón del LOUVRE</center></em></p>
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<!--texto para la imagen-->
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	        		<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+	        		<!--texto para la imagen-->
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Explora</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Varias piezas han resistido el embate del tiempo, alcanzando un lugar tan destacado en nuestra historia que parecen inmortales. La apreciación de su mérito artístico es prácticamente universal entre los especialistas alrededor del globo, considerándolas joyas de valor incalculable. El Louvre se presenta como el escenario perfecto para el encuentro directo con estas emblemáticas creaciones. Dentro de sus muros, el museo alberga algunas de las obras más famosas, desde pinturas y esculturas hasta maravillas arquitectónicas y objetos históricos, creados por artistas italianos, franceses o talentos anónimos de épocas antiguas. Cada obra maestra es única e incomparable.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/2.jpg" title="Img 2">
+        		<!--texto para la imagen-->
+        		<p><em><center><span style="color: #81571e;">Ven a observar nuestras nuevas exposiciones.</center></em></p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Recorrido 360°</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>¿Estás en la búsqueda de algo distinto? El Museo del Louvre te invita a explorarlo a través de un tour virtual con tecnología de visión 360°, accesible desde cualquier rincón del planeta. ¡Explora nuestro museo y descubre un anticipo de lo que tenemos para mostrarte! Esta experiencia virtual ofrece una nueva manera de ver el museo, proporcionando una introducción a aquellos que deseen obtener una impresión de cómo es, siendo una excelente alternativa para visualizarlo. ¡Haz click en la imagen para ser parte de esta experiencia!</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<a href="visualizer.html">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<center><img  src="imagenes/4.png" title="Img 3"></center>
+        		</a>
+        		<!--texto para la imagen-->
+        		<p><em><center><span style="color: #81571e;">¡Explora el Louvre en 360°!</center></em></p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Visita</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>La entrada principal al museo es a través de la Pirámide, organizada en cuatro categorías diferentes: aquellos que ya tienen boleto, aquellos sin boleto, visitantes con acceso prioritario (como personas con discapacidad, empleados del Louvre, etc.) y aquellos con credenciales especiales (miembros, educadores franceses o del Ministerio de Cultura, afiliados al ICOM, etc.). Durante días de alta concurrencia, dependiendo del perfil de los visitantes, es posible ingresar también a través del centro comercial Carrousel du Louvre, el pasaje Richelieu o la puerta de los Leones.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Bajo la Pirámide, se encuentran varios puntos de información que ofrecen mapas gratuitos del museo. Para verificar si las salas de interés estarán abiertas el día de tu visita, es recomendable revisar el calendario diseñado para tal fin. Para otras dudas o consultas, estamos disponibles en el número +33 (0)1 40 20 53 17.
+</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/3.png" title="Img 4">
+        		<!--texto para la imagen-->
+        		<p><em><center><span style="color: #81571e;">Agenda a nuestras visitas guiadas.</center></em></p>
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.louvre.fr/es/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/museelouvre/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="https://www.instagram.com/museelouvre//">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">todos los derechos a sus respectivos autores</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
